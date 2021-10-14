@@ -49,6 +49,10 @@ url: https://kristerw.github.io
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+twitter:
+  username: kwalfridsson
+  card: summary
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
@@ -76,6 +80,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-seo-tag
 
 # Exclude these files from your production _site
 exclude:
