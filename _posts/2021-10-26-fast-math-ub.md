@@ -21,13 +21,20 @@ into
 if (x > y) {
   do_something();
 }
+if (!(x > y)) {
+  do_something_else();
+}
+```
+`-ffinite-math-only` tells the compiler that no `NaN` values will ever be seen when running the program, so the compiler optimizes this to
+```c
+if (x > y) {
+  do_something();
+}
 if (x <= y) {
   do_something_else();
 }
 ```
-This optimization is only allowed when `x` and `y` cannot be `NaN` because both comparisons evaluate to false if `x` or `y` is `NaN`.
-
-`-ffinite-math-only` tells the compiler that no `NaN` values will ever be seen when running the program, enabling this transformation. But this means that neither `do_something` nor `do_something_else` is evaluated if `x` or `y` happens to be `NaN` when the program runs.
+But this means that neither `do_something` nor `do_something_else` is evaluated if `x` or `y` happens to be `NaN` when the program runs.
 
 This splitting of `if-then-else` helps vectorization where it makes it easier to work with element masks. This can be seen with the function below when compiled with clang 13.0.0 ([godbolt](https://godbolt.org/z/KjTsfMMvh))
 ```c
@@ -69,4 +76,4 @@ as described in the [previous blog post](https://kristerw.github.io/2021/10/19/f
 
 [^1]: This does not detect `-0.0`. But `-0.0` is very unlikely to cause any problems.
 
-*Updated: Corrected compiler flags in godbolt example.*
+*Updated: Corrected compiler flags in godbolt example. Clarified the text explaining the example.*
