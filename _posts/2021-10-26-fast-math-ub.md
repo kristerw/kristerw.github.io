@@ -4,7 +4,7 @@ title: Strange behavior with NaN and -ffast-math
 ---
 My [previous blog post](https://kristerw.github.io/2021/10/19/fast-math/) said that computations producing `Inf`, `NaN`, or `-0.0` in programs compiled with `-ffinite-math-only` and `-fno-signed-zeros` might cause the program to behave in strange ways, such as not evaluating either the true or false part of an `if`-statement.
 
-I have got several questions about this, so let's look at an example of how this can happen.
+I have received several questions about this, so let's look at an example of how this can happen.
 
 # Example -- vectorization
 
