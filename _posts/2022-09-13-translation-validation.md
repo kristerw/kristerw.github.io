@@ -104,7 +104,7 @@ Another annoying limitation is that GCC is doing folding (i.e., peephole optimiz
 
 # How pysmtgcc works
 I will follow up this blog post with a series of posts describing how this works, design decisions, and what I have learned. Tentative outline:
-1. Writing a GCC plugin and basics of GCC GIMPLE IR.
+1. [Writing a GCC plugin in Python](https://kristerw.github.io/2022/10/20/gcc-python-plugin/)
 2. Using SMT solvers for translation validation. More about GIMPLE semantics.
 3. Control flow.
 4. Memory.
