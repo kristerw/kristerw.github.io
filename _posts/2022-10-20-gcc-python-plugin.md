@@ -159,7 +159,7 @@ So my conclusion is that `gcc-python-plugin` is good for doing quick experiments
 
 [^project]: The plan was only to implement a few instructions, only handle 32-bit integers, etc. But the primitive tool found a GCC bug, so it seemed like it could actually be useful if some more functionality was added.
 
-[^controlflow]: Control flow is discussed in part three of this blog series.
+[^controlflow]: Control flow is discussed in part four of this blog series.
 
 [^example]: Adapted from a [`gcc-python-plugin`](https://github.com/davidmalcolm/gcc-python-plugin)  example pass.
 
