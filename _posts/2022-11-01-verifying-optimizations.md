@@ -354,9 +354,9 @@ which seems to be the best of both worlds.
 
 [^proof]: SMT solvers can, in general, generate a proof that it does not exist any solution. This is useful if we want to verify that the absence of a solution is not due to a bug in the SMT solver (solutions do not need a proof -- we can just substitute the values and verify that it is correct). We are not using that functionality in `pysmtgcc`.
 
-[^memory]: Memory access complicates this. See part three of this blog series.
+[^memory]: Memory access complicates this. See [part 3](https://kristerw.github.io/2023/07/17/memory-representation/) of this blog series.
 
-[^loops]: Control flow is discussed in part four of this blog series.
+[^loops]: Control flow is discussed in part 8 of this blog series.
 
 [^PR106811]: [PR 106811](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=106811)
 
