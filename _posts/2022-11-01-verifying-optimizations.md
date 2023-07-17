@@ -40,7 +40,7 @@ solver.append(x * x + y * y == 13)
 Finally, we add a call to `solver.check()` to solve the equation. The solver will, in principle, test all possible values, but it has clever ways of eliminating cases that cannot be a solution, and it is surprisingly fast for most cases that happen in reality.
 
 The SMT solver returns one of
-  * 'sat' -- the system of equations has a solution. The solution can then be obtained by calling `solver.model()`.
+  * `sat` -- the system of equations has a solution. The solution can then be obtained by calling `solver.model()`.
   * `unsat` -- no solution exists[^proof].
   * `unknown` -- the operation timed out, or the solver ran out of memory.
 
