@@ -64,9 +64,9 @@ for bb in fun.cfg.basic_blocks:
         # Do something with stmt.
         ...
 ```
-I needed to iterate over the basic blocks in reverse post order (which GCC calls "inverted post order"), so I added support for this in my fork of `gcc-python-plugin`
+I needed to iterate over the basic blocks in reverse post order, so I added support for this in my fork of `gcc-python-plugin`
 ```python
-for bb in fun.cfg.inverted_post_order:
+for bb in fun.cfg.reverse_post_order:
    ...
 ```
 
