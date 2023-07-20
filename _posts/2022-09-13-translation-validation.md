@@ -118,7 +118,7 @@ I plan to spend some time improving the memory handling, but then I'll declare t
 
 ----
 
-[^bugs]: [106513](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=106513), [106523](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=106523), [106744](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=106744), [106883](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=106883), [106884](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=106884)
+[^bugs]: [106513](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=106513), [106523](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=106523), [106744](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=106744), [106883](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=106883), [106884](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=106884), [106990](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=106990), [108625](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=108625), [109626](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=109626)
 
 [^naming]: Naming is hard.
 
